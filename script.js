@@ -12,8 +12,8 @@ function displayBook() {
   const bookContainer = document.createElement('div');
   books.forEach((arrayItem, index) => {
     awesomeBook.appendChild(bookContainer);
-    bookContainer.id = `${index}`;
-    document.getElementById(`${index}`).innerHTML = `<h4>${arrayItem.title}</h4>
+    bookContainer.id = `div${index}`;
+    document.getElementById(`div${index}`).innerHTML = `<h4>${arrayItem.title}</h4>
     <h4>${arrayItem.author}</h4>
     <button class="remove-book" id="${index}" type="button">Remove</button>
     <hr>`;
@@ -25,7 +25,7 @@ function deleteBook() {
   const removeBook = document.querySelectorAll('.remove-book');
   removeBook.forEach((item) => {
     item.addEventListener('click', () => {
-      const bookContainer = document.getElementById(`${item.id}`);
+      const bookContainer = document.getElementById(`div${item.id}`);
       bookContainer.remove();
       delete books[item.id];
     });
