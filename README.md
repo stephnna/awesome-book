@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+## Project Name 
+Awesome-books
 
-You can use the [editor on GitHub](https://github.com/stephnna/Awesome-books-/edit/awesome-books/README.md) to maintain and preview the content for your website in Markdown files.
+## Project Description
+In this project, we built a basic website that allows users to add/remove books from a list. We achieve that by using JavaScript objects and arrays. we also dynamically modify the DOM and add basic events.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Built With
+- HTML, css & Javascript
 
-### Markdown
+## Deployment
+[Live view]( https://stephnna.github.io/Awesome-books-/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Getting Started
 
-```markdown
-Syntax highlighted code block
+The goal of this project is to:
+-Understand different ways to create objects in JavaScript.
+-Create and access properties and methods of JavaScript objects.
+clone this repo: git clone https://github.com/stephnna/Awesome-books-.git, cd to the folder, then open the file in the browser.)
 
-# Header 1
-## Header 2
-### Header 3
+## Authors
+👤 Ezea Stephen Nnabuike
+- GitHub: [@stephnna](https://github.com/stephnna)
+- Twitter: [@stephnna](https://twitter.com/stephnna)
+- LinkedIn: [Linkedin](https://www.linkedin.com/in/stephen-nnabuike-ezea-143b97170/)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+👤 **showole azeezat**
+- GitHub: [@githubhandle](https://github.com/oluwajuwon8)
+- Twitter: [@twitterhandle](https://twitter.com/oluwafu87040629)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/showole-azeezat-omolola-4368a7ba/)
 
-**Bold** and _Italic_ and `Code` text
+## 🤝 Contributing
 
-[Link](url) and ![Image](src)
-```
+Contributions, issues, and feature requests are welcome!
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Feel free to check the [issues page](../../issues/).
 
-### Jekyll Themes
+## Show your support
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/stephnna/Awesome-books-/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Give a ⭐️ if you like this project!
 
-### Support or Contact
+## Acknowledgments
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
