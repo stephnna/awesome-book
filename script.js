@@ -10,11 +10,9 @@ class AwesomeBooks {
   displayBooks(book) {
     let bookContainer = '';
     book.forEach((arrayItem, index) => {
-      const bookContent = `<div>
-    <h4>${arrayItem.title}</h4>
-    <h4>${arrayItem.author}</h4>
-    <button class="remove-book" id=${index} type="button">Remove</button>
-    <hr>
+      const bookContent = `<div id=div${index} class="book-container">    
+    <h4>"${arrayItem.title}" by ${arrayItem.author}</h4>    
+    <div><button class="remove-book" id=${index} type="button">Remove</button></div>    
     </div>`;
       bookContainer += bookContent;
     });
@@ -24,8 +22,16 @@ class AwesomeBooks {
   // get books in html page if it exist in local storage
   getLocalStorageData() {
     const data = JSON.parse(localStorage.getItem('bookdata'));
+    // console.log(data);
+
     if (data !== null) {
       this.displayBooks(data);
+      const bookContent = document.querySelectorAll('.book-container');
+      bookContent.forEach((item, index) => {
+        if (index % 2 === 0) {
+          document.getElementById(item.id).style.backgroundColor = '#D0D0D0';
+        }
+      });
     } else {
       this.awesomeBooks.style.display = 'none';
     }

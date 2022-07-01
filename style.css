@@ -1,3 +1,28 @@
-h1 {
-  color: black;
+#awesome-book {
+  border: 3px solid black;
+  margin-bottom: 16px;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 16px;
+  padding-left: 16px;
+  height: 27px;
+}
+
+.center-item {
+  text-align: center;
+}
+
+hr {
+  width: 100px;
+  border: 1px solid black;
+}
+
+.remove-book,
+.add-button {
+  background-color: white;
+  box-shadow: 2px 2px black;
 }
