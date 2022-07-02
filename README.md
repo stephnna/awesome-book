@@ -8,7 +8,7 @@ In this project, we built a basic website that allows users to add/remove books 
 - HTML, css & Javascript
 
 ## Deployment
-[Live view]( https://stephnna.github.io/Awesome-books-/)
+[Live view](https://stephnna.github.io/awesome-book/)
 
 ## Getting Started
 
