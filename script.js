@@ -4,6 +4,7 @@ const contactLink = document.getElementById('contact-link');
 const addButtonContainer = document.getElementById('add-btn-container');
 const awesomeBookContainer = document.getElementById('list');
 const contact = document.getElementById('contact');
+const dateTime = document.getElementById('date-time');
 
 listLink.addEventListener('click', () => {
   awesomeBookContainer.style.display = 'block';
@@ -26,7 +27,6 @@ contactLink.addEventListener('click', () => {
 class AwesomeBooks {
   // Initializations
   constructor() {
-    this.dateTime = document.getElementById('date-time');
     this.books = [];
     this.awesomeBooks = document.getElementById('awesome-book');
     this.button = document.getElementById('add-btn');
@@ -48,7 +48,6 @@ class AwesomeBooks {
   // get books in html page if it exist in local storage
   getLocalStorageData() {
     const data = JSON.parse(localStorage.getItem('bookdata'));
-    this.dateTime.innerHTML = Date();
     if (data !== null) {
       this.displayBooks(data);
 
@@ -105,3 +104,10 @@ if (localStorage.getItem('bookdata') !== null) {
 }
 newBooks.AddOnClick();
 newBooks.deleteBook();
+
+const currentDate = () => {
+  const newDate = new Date();
+  dateTime.innerHTML = `${newDate.toDateString()}, ${newDate.getHours()}:${newDate.getMinutes()}:${newDate.getSeconds()}pm `;
+  setTimeout(currentDate, 1000);
+};
+window.onload = currentDate();
